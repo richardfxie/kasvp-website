@@ -1,0 +1,45 @@
+export interface TeamMember {
+  slug: string;
+  name: string;
+  title: string;
+  bio: string;
+  image: string;
+  linkedin?: string;
+}
+
+export const teamMembers: TeamMember[] = [
+  {
+    slug: "julian-handel",
+    name: "Julian Handel",
+    title: "Partner",
+    bio: "Julian is a Partner at KAS Venture Partners. Before joining the firm, he was a Managing Director at Anchorage Capital Group, where he spent 9 years working across a variety of debt and equity investments, and also previously worked at 40 North Industries and Silver Lake Partners. Julian graduated with a dual degree from the Huntsman Program for International Studies and Business at the University of Pennsylvania in 2011.",
+    image: "/images/julian-handel.jpg",
+    linkedin: "https://linkedin.com/in/julian-handel",
+  },
+  {
+    slug: "lucas-lorentz",
+    name: "Lucas Lorentz",
+    title: "Associate",
+    bio: "Lucas is an Associate at KAS Venture Partners. Before joining the firm, he worked at Creative Artists Agency in the Media Finance department, helping to package and finance films and television shows in Latin America. Lucas graduated from the University of Colorado Boulder in 2017.",
+    image: "/images/lucas-lorentz.jpg",
+    linkedin: "https://linkedin.com/in/lucas-lorentz",
+  },
+  {
+    slug: "richard-xie",
+    name: "Richard Xie",
+    title: "Analyst",
+    bio: "Richard is an Analyst at KAS Venture Partners. Before joining the firm, he spent two years at Perella Weinberg in the Technology M&A advisory group. Richard graduated from the Wharton School of the University of Pennsylvania in 2022.",
+    image: "/images/richard-xie.jpg",
+  },
+];
+
+export const kevinUlrich = {
+  name: "Kevin Ulrich",
+  title: "Founder",
+  bio: `Kevin Ulrich is the Founder and Chief Executive Officer of KAS Ventures Partners, a global multi-strategy asset management firm.
+
+Kevin Ulrich co-founded Anchorage Capital in New York in 2003. In his current role as Chairman, Kevin works closely with the Co-Chief Investment Officers on the firm's portfolio management, research and investment decisions. He is the Chair of the Legacy Funds Investment Committee for the ACP Funds, AIO III, AIO IV, AIO V, AIO VI, and AIO VII (collectively, the "Legacy Funds"). During his time as CEO of Anchorage, the firm grew to become a leading alternative credit and distressed investment manager with over $30 billion in assets under management and operating affiliates in London and Luxembourg.
+
+Kevin currently is the Chairman of the Board of J. Crew Group Inc. He previously was the Chairman of the Board of MGM Holdings, Inc. ("MGM") and had been a director of MGM since December 2010, also serving as the head of the Compensation Committee. Kevin stepped down as Chairman of MGM in connection with the successful sale of MGM to Amazon, Inc.`,
+  image: "/images/kevin-ulrich.jpg",
+};
