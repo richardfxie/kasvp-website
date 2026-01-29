@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #1a1a1a;
   --foreground: #ffffff;
 }
 
@@ -163,4 +163,10 @@ a {
 /* Active navigation state */
 .nav-link.active {
   opacity: 1 !important;
+}
+
+/* Navigation bar background */
+.nav-bg {
+  background-color: var(--background);
+  backdrop-filter: blur(10px);
 }
