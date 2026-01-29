@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAS Venture Partners</title>
+  <meta name="description" content="A global multi-strategy asset management firm">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-background">
+  <!-- Navigation -->
+  <nav class="fixed top-0 right-0 z-50 p-6 md:p-8">
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex items-center gap-8 lg:gap-12">
+      <li>
+        <a href="/" class="nav-link text-sm tracking-wider transition-opacity hover:opacity-70 opacity-100">
+          HOME
+        </a>
+      </li>
+      <li>
+        <a href="/kevin-ulrich.html" class="nav-link text-sm tracking-wider transition-opacity hover:opacity-70 opacity-80">
+          KEVIN ULRICH
+        </a>
+      </li>
+      <li>
+        <a href="/team.html" class="nav-link text-sm tracking-wider transition-opacity hover:opacity-70 opacity-80">
+          TEAM
+        </a>
+      </li>
+      <li>
+        <a href="/contact.html" class="nav-link text-sm tracking-wider transition-opacity hover:opacity-70 opacity-80">
+          CONTACT
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+      <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden absolute top-full right-0 mt-2 bg-black/95 backdrop-blur-sm rounded-lg p-6 min-w-[200px] md:hidden">
+      <ul class="flex flex-col gap-4">
+        <li>
+          <a href="/" class="nav-link text-sm tracking-wider block py-2 transition-opacity hover:opacity-70 opacity-100">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="/kevin-ulrich.html" class="nav-link text-sm tracking-wider block py-2 transition-opacity hover:opacity-70 opacity-70">
+            KEVIN ULRICH
+          </a>
+        </li>
+        <li>
+          <a href="/team.html" class="nav-link text-sm tracking-wider block py-2 transition-opacity hover:opacity-70 opacity-70">
+            TEAM
+          </a>
+        </li>
+        <li>
+          <a href="/contact.html" class="nav-link text-sm tracking-wider block py-2 transition-opacity hover:opacity-70 opacity-70">
+            CONTACT
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 page-transition">
+    <div class="relative min-h-screen flex flex-col">
+      <!-- Hero Section -->
+      <div class="relative flex-1 flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="/images/hero-domino.jpg"
+            alt="Domino Sugar Factory - Brooklyn Waterfront"
+            class="w-full h-full object-cover"
+            loading="eager"
+          >
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-light tracking-[0.2em] text-white">
+            KAS VENTURE
+          </h1>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-light tracking-[0.2em] text-white mt-2">
+            PARTNERS
+          </h1>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 text-center text-sm text-white/60">
+    <p>
+      &copy; <span id="current-year"></span> by KAS Venture Partners.
+      <a href="/legal.html" class="hover:text-white/80 transition-colors">
+        Legal Disclosure
+      </a>
+    </p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

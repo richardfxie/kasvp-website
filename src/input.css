@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection styles */
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Page load animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-transition {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Mobile menu animations */
+.mobile-menu {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-menu.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.mobile-menu.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hamburger animation */
+.hamburger-line {
+  transition: all 0.3s ease;
+}
+
+.hamburger-open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.hamburger-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+/* Team member stagger animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-member-item {
+  animation: slideUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+.team-member-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.team-member-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.team-member-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+/* Form success message animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message,
+.error-message {
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Button hover effects */
+button,
+.btn {
+  transition: all 0.2s ease;
+}
+
+button:hover:not(:disabled),
+.btn:hover {
+  transform: scale(1.02);
+}
+
+button:active:not(:disabled),
+.btn:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Link transitions */
+a {
+  transition: opacity 0.2s ease;
+}
+
+/* Active navigation state */
+.nav-link.active {
+  opacity: 1 !important;
+}
