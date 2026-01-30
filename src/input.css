@@ -170,3 +170,21 @@ a {
   background-color: var(--background);
   backdrop-filter: blur(10px);
 }
+
+/* Image antialiasing for downscaled images */
+img {
+  image-rendering: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Apply subtle antialiasing filter to content images */
+img.antialiased,
+.hero-image img,
+.team-photo img,
+img[class*="object-cover"] {
+  image-rendering: smooth;
+  image-rendering: -webkit-optimize-contrast;
+  filter: blur(0.2px);
+  -webkit-filter: blur(0.2px);
+}
