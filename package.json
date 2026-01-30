@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "build:images": "node scripts/resize-images.js",
     "watch:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
   },
   "devDependencies": {
