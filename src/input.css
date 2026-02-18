@@ -81,7 +81,7 @@ body {
 }
 
 .hamburger-open .hamburger-line:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger-open .hamburger-line:nth-child(2) {
@@ -89,7 +89,7 @@ body {
 }
 
 .hamburger-open .hamburger-line:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Team member stagger animation */
