@@ -78,40 +78,42 @@
 
   <!-- Main Content -->
   <main class="flex-1 page-transition">
-    <div class="min-h-screen flex flex-col lg:flex-row">
-      <!-- Contact Information Section -->
-      <div class="w-full lg:w-1/2 flex items-center justify-center px-6 py-24 md:px-12 lg:px-24 bg-background">
-        <div class="max-w-md w-full">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12">
-            Contact Us
-          </h1>
+    <div class="min-h-screen pt-24 md:pt-32 pb-12 px-6 md:px-12 lg:px-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <!-- Contact Information -->
+          <div class="order-2 lg:order-1">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8">
+              Contact Us
+            </h1>
 
-          <div class="space-y-8">
-            <!-- Email -->
-            <div>
-              <a href="mailto:info@kasvp.com" class="text-xl md:text-2xl hover:text-white/80 transition-colors">
-                info@kasvp.com
-              </a>
+            <div class="space-y-6 text-white/90 leading-relaxed">
+              <div>
+                <a href="mailto:info@kasvp.com" class="text-lg hover:text-white/80 transition-colors">
+                  info@kasvp.com
+                </a>
+              </div>
+
+              <div class="text-lg">
+                <p>300 Kent Ave</p>
+                <p>Ste 603</p>
+                <p>Brooklyn, NY 11249</p>
+              </div>
             </div>
+          </div>
 
-            <!-- Address -->
-            <div class="text-lg md:text-xl text-white/90 leading-relaxed">
-              <p>300 Kent Ave</p>
-              <p>Ste 603</p>
-              <p>Brooklyn, NY 11249</p>
+          <!-- Photo -->
+          <div class="order-1 lg:order-2">
+            <div class="relative aspect-[3/4] w-full max-w-md mx-auto lg:ml-auto lg:mr-0">
+              <img
+                src="images/hero-domino.webp"
+                alt="Domino Sugar Factory - Brooklyn Waterfront"
+                class="w-full h-full object-cover"
+                loading="eager"
+              >
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Image Section -->
-      <div class="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-screen">
-        <img
-          src="images/hero-domino.webp"
-          alt="Domino Sugar Factory - Brooklyn Waterfront"
-          class="w-full h-full object-cover"
-          loading="eager"
-        >
       </div>
     </div>
   </main>
