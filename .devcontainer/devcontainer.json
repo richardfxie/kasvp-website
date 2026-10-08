@@ -6,7 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/typescript-node",
 	"features": {
 		"ghcr.io/stu-bell/devcontainer-features/claude-code:0": {},
-		"ghcr.io/devcontainer-config/features/dot-config:4": {}
+		"ghcr.io/devcontainer-config/features/dot-config:5": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
